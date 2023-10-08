@@ -9,4 +9,9 @@ for i in range(N - 1):
         if a[j] > a[j + 1]:
             a[j], a[j + 1] = a[j + 1], a[j]
 
-print(a)
+N = int(input("Если вы хотите сортировку в прямом порядке введите 0, в обратном 1: "))
+if(N == 0):
+    print(a)
+else:
+    a.reverse()
+    print(a)
